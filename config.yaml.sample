@@ -1,0 +1,4 @@
+backlog:
+  apiKey: [Backlogの個人設定で取得できるAPI Key]
+  baseUrl: https://[対象のBacklogのドメイン]/api/v2
+  projectKey: [対象プロジェクトキー]
