@@ -1,8 +1,15 @@
 from backlog import Backlog
 
+issueNumbers = [296, 330]
+assignee = '村中'
+status = '修正済'
+comment = 'ビルド30'
 
 backlog = Backlog()
-backlog.updateStatus(349, '牧内', '完了', 'テスト終了')
+
+for n in issueNumbers:
+    print(f'Update Issue#{n}')
+    backlog.updateStatus(n, assignee, status, comment)
 
 # 未対応
 # 処理中

@@ -3,15 +3,19 @@ import pprint
 from model import *
 
 class Backlog:
+    users = {}
+    statuses = {}
+
+    def __init__(self):
+        self.users = User()
+        self.statuses = Status()
 
     def updateStatus(self, issueNumber, asigneeName, statusName, comment):
 
-        users = User()
-        user = self.getValue(users.findByName(asigneeName))
+        user = self.getValue(self.users.findByName(asigneeName))
         pprint.pprint(user)
 
-        statuses = Status()
-        status = self.getValue(statuses.findByName(statusName))
+        status = self.getValue(self.statuses.findByName(statusName))
         pprint.pprint(status)
 
         issue = Issue(issueNumber)
