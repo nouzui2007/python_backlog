@@ -1,9 +1,9 @@
 from backlog import Backlog
 
-issueNumbers = [380, 376, 372, 378, 374, 375, 369, 348, 379, 373]
+issueNumbers = [21, 26, 41, 81, 172]
 assignee = '村中'
 status = '修正済'
-comment = 'ビルド36'
+comment = '通信系対応したので最新版でご確認ください。'
 
 backlog = Backlog()
 
